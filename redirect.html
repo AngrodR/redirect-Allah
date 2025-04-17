@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Remember Allah</title>
+  <style>
+    body {
+      background-image: url('https://wallpapers.com/images/hd/kaaba-cloudy-pink-sky-a2wif1x8on9qihxv.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      color: #fff;
+      text-align: center;
+      font-family: 'Segoe UI', sans-serif;
+      padding: 40px 20px;
+      backdrop-filter: brightness(0.6);
+    }
+
+    h1 {
+      font-size: 80px;
+      color: #00ffcc;
+      margin-bottom: 40px;
+      text-shadow: 2px 2px 10px #000;
+    }
+
+    .verse {
+      margin-bottom: 40px;
+      padding: 20px;
+      border-left: 4px solid #00ffcc;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+      background-color: rgba(0, 0, 0, 0.6);
+      border-radius: 8px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    }
+
+    .arabic {
+      font-size: 28px;
+      color: #ffd700;
+      margin-bottom: 10px;
+    }
+
+    .ayah {
+      font-size: 20px;
+      color: #ccc;
+      font-style: italic;
+    }
+
+    audio {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>اللّهُ</h1>
+
+  <div class="verse">
+    <div class="arabic">إِنَّ اللَّهَ بَصِيرٌ بِالْعِبَادِ</div>
+    <div class="ayah">"Indeed, Allah is Watchful over His servants." (Qur'an 40:44)</div>
+  </div>
+
+  <div class="verse">
+    <div class="arabic">وَلَا تَقْرَبُوا الزِّنَىٰ ۖ إِنَّهُ كَانَ فَاحِشَةً وَسَاءَ سَبِيلًا</div>
+    <div class="ayah">"And do not even approach zina. Indeed, it is ever an immorality and is evil as a way." (Qur'an 17:32)</div>
+  </div>
+
+  <div class="verse">
+    <div class="arabic">إِنَّ اللَّهَ كَانَ عَلَيْكُمْ رَقِيبًا</div>
+    <div class="ayah">"Indeed, Allah is ever watching over you." (Qur'an 4:1)</div>
+  </div>
+
+  <div class="verse">
+    <div class="arabic">وَهُوَ مَعَكُمْ أَيْنَ مَا كُنتُمْ</div>
+    <div class="ayah">"And He is with you wherever you are." (Qur'an 57:4)</div>
+  </div>
+
+  <div class="verse">
+    <div class="arabic">قُلْ يَا عِبَادِيَ الَّذِينَ أَسْرَفُوا عَلَىٰ أَنفُسِهِمْ لَا تَقْنَطُوا مِن رَّحْمَةِ اللَّهِ</div>
+    <div class="ayah">"Say, O My servants who have transgressed against themselves: Do not despair of the mercy of Allah." (Qur'an 39:53)</div>
+  </div>
+
+  <!-- Audio -->
+  <audio autoplay loop id="quranAudio">
+    <source src="https://download.quranicaudio.com/qdc/mishari_al_afasy/murattal/001.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <script>
+    // Force play audio in case autoplay is blocked
+    window.addEventListener('click', () => {
+      const audio = document.getElementById('quranAudio');
+      audio.play().catch(e => console.log("Audio autoplay blocked."));
+    });
+  </script>
+</body>
+</html>
